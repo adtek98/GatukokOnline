@@ -1,0 +1,39 @@
+﻿@page
+@model WebApp.Pages.OrdersModel
+@{
+}
+
+<h2>Ordrar</h2>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Rätt</th>
+			<th>Tillbehör</th>
+			<th>Extra Info</th>
+			<th>Pris</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach(var order in Model.FoodOrders){
+			<tr>
+				<td>
+					@order.Id
+				</td>
+				<td>
+					@order.FoodType
+				</td>
+				<td>
+					@order.Sides
+				</td>
+				<td>
+					@order.ExtraInfo
+				</td>
+				<td>
+					@order.Price
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

@@ -1,0 +1,23 @@
+﻿@page
+@model WebApp.Pages.Forms.PizzaFormModel
+@{
+}
+<div class="">
+	<h2>Pizza</h2>
+	<form method="post">
+		<div class="form-group my-2">
+			<label>Välj din pizza</label>			
+			<select class="form-select"  asp-for="Food.FoodType">
+				<option value="Kebabpizza">Kebabpizza, 100 kr</option>
+				<option value="Vesuvio">Vesuvio, 90 kr</option>
+				<option value="Calzone">Calzone, 95 kr</option>
+			</select>
+		</div>
+		<div class="form-group my-2">
+			<label>Info till restaurangen</label>
+			<textarea class="form-control" asp-for="Food.ExtraInfo"></textarea>
+		</div>
+
+		<button type="submit" class="btn btn-primary">Beställ</button>
+	</form>
+</div>

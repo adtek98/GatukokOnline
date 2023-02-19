@@ -1,0 +1,21 @@
+﻿@page
+@model WebApp.Pages.Checkout.CheckoutModel
+@{
+}
+
+<h1>Här är din order!</h1>
+<div>
+	<ul>
+		<li>@Model.FoodType</li>
+		@if (Model.Sides != "inga")
+		{
+			<li>Tillbehör: @Model.Sides</li>
+		}
+		@if(Model.ExtraInfo != "inga"){
+			<li>Extra Info: @Model.ExtraInfo</li>
+		}
+
+		<li>Pris: @Model.Price kr</li>
+	</ul>
+	<a class="btn btn-primary" asp-page="ThankYou">Bekräfta</a>
+</div>

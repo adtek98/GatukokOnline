@@ -1,0 +1,30 @@
+﻿@page
+@model WebApp.Pages.RegisterModel
+@{
+}
+
+<div class="container">
+	<h2 class="text-center">Registrera</h2>
+	<form method="post">
+		<div class="form-group col-lg-4 m-auto">
+			<div class="my-2">
+				<label asp-for="Email">Email</label>
+				<input type="text" class="form-control" asp-for="Email" />
+				<span asp-validation-for="Email" class="text-danger"></span>
+			</div>
+			<div class="my-2">
+				<label asp-for="Password">Lösenord</label>
+				<input type="password" class="form-control" asp-for="Password" />
+				<span asp-validation-for="Password" class="text-danger"></span>
+			</div>
+			<div class="my-2">
+				<label asp-for="ConfirmPassword">Bekräfta lösenord</label>
+				<input type="password" class="form-control" asp-for="ConfirmPassword" />
+				<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+			</div>
+
+			<button class="btn btn-primary" type="submit">Logga in</button>
+			
+		</div>
+	</form>
+</div>

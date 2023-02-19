@@ -1,0 +1,29 @@
+﻿@page
+@model WebApp.Pages.FoodModel
+
+<div class="text-center mainText">
+	<h1>Välj vilken rätt du vill ha och beställ</h1>
+	<h2>Enklare än så blir det inte!</h2>
+</div>
+<div class="row justify-content-between col-lg-10 m-auto foodRow">
+	<div class="boxItem col-5">
+		<img class="img-fluid foodImg" src="~/images/Pizza.jpg" />
+		<p>Pizza</p>
+		<a class="btn btn-primary" asp-page="Forms/PizzaForm">Välj</a>
+	</div>
+	<div class="boxItem col-5">
+		<img class="img-fluid foodImg" src="~/images/Kebabtallrik.jpg" />
+		<p>Kebabtallrik</p>
+		<a class="btn btn-primary" asp-page="Forms/KebabtallrikForm">Välj</a>
+	</div>
+	<div class="boxItem col-5">
+		<img class="img-fluid foodImg" src="~/images/Kebabrulle.jpg" />
+		<p>Kebabrulle</p>
+		<a class="btn btn-primary" asp-page="Forms/KebabrulleForm">Välj</a>
+	</div>
+	<div class="boxItem col-5">		
+		<img class="img-fluid foodImg" src="~/images/Hamburgare.jpg" />
+		<p>Hamburgartallrik</p>
+		<a class="btn btn-primary" asp-page="Forms/HamburgareForm">Välj</a>
+	</div>
+</div>

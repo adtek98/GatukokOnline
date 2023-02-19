@@ -1,0 +1,24 @@
+﻿@page
+@model WebApp.Pages.Forms.KebabrulleFormModel
+@{
+}
+<div class="">
+	<h2>Kebabrulle</h2>
+	<form method="post">
+		<div class="form-group my-2">
+			<label>Välj vilket kött</label>
+			<select class="form-select" asp-for="Food.FoodType">
+				<option value="Kebabrulle">Nöt, 100 kr</option>
+				<option value="Kycklingrulle">Kyckling, 100 kr</option>
+				<option value="Gyrosrulle">fläsk, 100 kr</option>
+			</select>
+		</div>
+
+		<div class="form-group my-2">
+			<label>Info till restaurangen</label>
+			<textarea class="form-control" asp-for="Food.ExtraInfo"></textarea>
+		</div>
+
+		<button type="submit" class="btn btn-primary">Beställ</button>
+	</form>
+</div>
